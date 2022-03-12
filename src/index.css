@@ -13,7 +13,7 @@ code {
 }
 
 :root {
-  --background-color-light: rgb(251, 255, 252);
+  --background-color-light: rgb(255, 255, 255);
   --background-color-dark: rgb(26, 26, 26);
   --theme-color-dark1: rgb(255, 174, 0);
   --theme-color-light1: rgb(0, 255, 21);
