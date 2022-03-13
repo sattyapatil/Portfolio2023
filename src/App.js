@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {BsFillLightbulbFill} from 'react-icons/bs'
 import './App.css';
 import Home from './components/home/home'
 
@@ -64,7 +65,10 @@ function App() {
   return (
     <React.Fragment>
       <div className="App">
-        <Home theme={theme} setTheme={setTheme} setThemeFunc={setThemeFunc}/>
+        <div className='theme-icon-container'>
+            <BsFillLightbulbFill style={{fontSize: "2em"}} onClick={()=> setThemeFunc(theme)}/>
+        </div>
+        <Home />
       </div>
     </React.Fragment>
     

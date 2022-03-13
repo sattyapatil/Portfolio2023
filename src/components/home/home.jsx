@@ -18,7 +18,7 @@ function Home(props) {
                 
             </div>
             
-            <SideBar theme={props.theme} setTheme={props.setTheme} setThemeFunc={props.setThemeFunc} />
+            <SideBar />
             
         </div>
         

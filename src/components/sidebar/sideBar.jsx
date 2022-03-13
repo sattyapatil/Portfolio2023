@@ -3,7 +3,6 @@ import { IoHome } from 'react-icons/io5';
 import {MdOutlineSummarize} from 'react-icons/md';
 import {MdWork, MdContacts} from 'react-icons/md'
 import {ImBlogger} from 'react-icons/im'
-import {BsFillLightbulbFill} from 'react-icons/bs'
 import './sideBar.css'
 
 
@@ -13,9 +12,6 @@ function SideBar(props) {
     let iconStyles = { fontSize: "1.5em" };
     return (
         <div class='side-bar'>
-            <div className='side-bar-title'>
-                <BsFillLightbulbFill style={{fontSize: "2em"}} onClick={()=> props.setThemeFunc(props.theme)}/>
-            </div>
             <div className='side-bar-elements'>
                 <div className='selected-side-bar-element'>
                     <span className='side-bar-element-text'>
