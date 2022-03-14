@@ -17,6 +17,7 @@ function App() {
       let themeColor3;
       let textColot1;
       let iconBackgroundColor1;
+      let sideBarBackgroundColor1;
 
       if (theme==='light') {
         backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color-light');
@@ -25,7 +26,8 @@ function App() {
         themeColor3 = getComputedStyle(document.documentElement).getPropertyValue('--theme-color-light3');
         textColot1 = getComputedStyle(document.documentElement).getPropertyValue('--text-color-light1');
         iconBackgroundColor1 = getComputedStyle(document.documentElement).getPropertyValue('--icon-backgound-color-light1');
-        
+        sideBarBackgroundColor1 = getComputedStyle(document.documentElement).getPropertyValue('--side-bar-background-color-light1')
+
       }else{
         backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color-dark');
         themeColor1 = getComputedStyle(document.documentElement).getPropertyValue('--theme-color-dark1');
@@ -33,6 +35,8 @@ function App() {
         themeColor3 = getComputedStyle(document.documentElement).getPropertyValue('--theme-color-dark3');
         textColot1 = getComputedStyle(document.documentElement).getPropertyValue('--text-color-dark1');
         iconBackgroundColor1 = getComputedStyle(document.documentElement).getPropertyValue('--icon-backgound-color-dark1');
+        sideBarBackgroundColor1 = getComputedStyle(document.documentElement).getPropertyValue('--side-bar-background-color-dark1')
+
       }
 
 
@@ -43,6 +47,7 @@ function App() {
       document.documentElement.style.setProperty('--theme-color3', themeColor3);
       document.documentElement.style.setProperty('--text-color1', textColot1);
       document.documentElement.style.setProperty('--icon-backgound-color1', iconBackgroundColor1);
+      document.documentElement.style.setProperty('--side-bar-background-color', sideBarBackgroundColor1);
      
 
       }, [theme])

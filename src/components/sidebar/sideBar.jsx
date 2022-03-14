@@ -1,12 +1,40 @@
-import React from "react";
+import Reac, {useEffect, useState} from "react";
 import { IoHome } from 'react-icons/io5';
 import {MdOutlineSummarize} from 'react-icons/md';
 import {MdWork, MdContacts} from 'react-icons/md'
 import {ImBlogger} from 'react-icons/im'
-import './sideBar.css'
+// import './sideBar.css'
 
 
 function SideBar(props) {
+
+    const [width, setWindowWidth] = useState(0)   
+
+    useEffect(() => { 
+
+        updateDimensions();
+   
+        window.addEventListener("resize", updateDimensions);     
+
+        return () => window.removeEventListener("resize",updateDimensions);    }, 
+        
+        [width]
+        
+        )    
+          
+    const updateDimensions = () => {
+         const width = window.innerWidth
+         console.log(width)
+         setWindowWidth(width)
+
+         // Importing files depending on width of screen
+        if (width<1024) import (`./sideBarMobile.css`);
+        if (width>1024) import (`./sideBar.css`);
+       }
+
+    // if (width>1024) {
+    //     import './sideBarMobile.css'
+    // } 
 
     
     let iconStyles = { fontSize: "1.5em" };
