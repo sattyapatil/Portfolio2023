@@ -1,4 +1,4 @@
-import Reac, {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import { IoHome } from 'react-icons/io5';
 import {MdOutlineSummarize} from 'react-icons/md';
 import {MdWork, MdContacts} from 'react-icons/md'

@@ -34,12 +34,12 @@ function Home(props) {
     return (
         <div className='App-home'>
             <div className='Container-profile-picture-cart'>
-                
-            </div>
+                <ProfilePictureCart />
+             </div>
             <ProfilePictureCart />
             <div className='Container-info'>
-                <h1>Satish Badrinath Pophale</h1>
-                
+                <h2>Satish Badrinath Pophale</h2>
+                <p>I'm software developer with 3+ years of experience. My most of the experience in app developer.</p>
             </div>
             
             <SideBar />
