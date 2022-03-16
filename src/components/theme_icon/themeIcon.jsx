@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import './themeIcon.css'
 import {BsFillLightbulbFill} from 'react-icons/bs'
 
 
 
-function ThemeIcon() {
+function ThemeIcon(props) {
 
-    const [theme, setTheme] = useState('light');
     
     useEffect(() => {
   
@@ -19,7 +18,7 @@ function ThemeIcon() {
         let iconBackgroundColor1;
         let sideBarBackgroundColor1;
   
-        if (theme==='light') {
+        if (props.theme==='light') {
           backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color-light');
           themeColor1 = getComputedStyle(document.documentElement).getPropertyValue('--theme-color-light1');
           themeColor2 = getComputedStyle(document.documentElement).getPropertyValue('--theme-color-light2');
@@ -50,7 +49,7 @@ function ThemeIcon() {
         document.documentElement.style.setProperty('--side-bar-background-color', sideBarBackgroundColor1);
        
   
-        }, [theme])
+        }, [props.theme])
   
     // function setColor (){
     //     //set all properties as per user preference
@@ -59,9 +58,9 @@ function ThemeIcon() {
   
     function setThemeFunc (theme) {
       if (theme==='light') {
-        setTheme('dark')
+        props.setTheme('dark')
       }else {
-        setTheme('light')
+        props.setTheme('light')
       }
       // window.location.reload(false);
   
@@ -69,7 +68,7 @@ function ThemeIcon() {
 
     return (
         <div className='theme-icon-container'>
-            <BsFillLightbulbFill style={{fontSize: "2em"}} onClick={()=> setThemeFunc(theme)}/>
+            <BsFillLightbulbFill style={{fontSize: "2em"}} onClick={()=> setThemeFunc(props.theme)}/>
         </div>
     )
 };

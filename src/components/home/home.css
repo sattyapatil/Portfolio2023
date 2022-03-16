@@ -40,7 +40,7 @@
   }
 
   .title-text {
-    font-size: var(--title-text-font-size);
+    font-size: 50px;
     font-family: var(--title-text-font-family);
     color: var(--theme-color1);
     font-weight: bold;
@@ -55,6 +55,9 @@
 
 .title-text-container {
   margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
 }
 .sub-text-container {
   margin-top: 10%;

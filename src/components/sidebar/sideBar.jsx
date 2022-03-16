@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
 import {
-    useNavigate
+    useNavigate,
+    useLocation
   } from "react-router-dom";
 import { IoHome } from 'react-icons/io5';
 import {MdOutlineSummarize} from 'react-icons/md';
-import {MdWork, MdContacts} from 'react-icons/md'
-import {ImBlogger} from 'react-icons/im'
+import {MdWork, MdContacts} from 'react-icons/md';
+import {ImBlogger} from 'react-icons/im';
 // import './sideBar.css'
 
 
@@ -13,7 +14,9 @@ function SideBar(props) {
 
     const navigate = useNavigate();
 
-    const [width, setWindowWidth] = useState(0)   
+    const [width, setWindowWidth] = useState(0)  
+
+    let location = useLocation(); 
 
     useEffect(() => { 
 
@@ -46,16 +49,16 @@ function SideBar(props) {
     return (
         <div class='side-bar'>
             <div className='side-bar-elements'>
-                <div className='selected-side-bar-element'>
+                <div className={location.pathname==='/' ? 'selected-side-bar-element' : 'side-bar-element'}>
                     <span className='side-bar-element-text'>
                         <h2>Home</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <IoHome style={iconStyles} />
+                        <IoHome style={iconStyles} onClick={() => navigate('/')} />
                     </span>
                     
                 </div>
-                <div className='side-bar-element'>
+                <div className={location.pathname==='/about' ? 'selected-side-bar-element' : 'side-bar-element'}>
                     <span className='side-bar-element-text'>
                         <h2>About</h2>
                     </span>

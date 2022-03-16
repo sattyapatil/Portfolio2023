@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,15 +10,18 @@ import About from './components/about/about';
 
 function App() {
 
+  const [theme, setTheme] = useState(0);
+
+
   return (
-    <React.Fragment>
+    <React.Fragment> 
       <div className="App">
           <Router>
               <Routes>
 
-                <Route exact path="/" element={<Home />} />
+                <Route exact path="/" element={<Home theme={theme} setTheme={setTheme}  />} />
                   
-                <Route path="/about" element={<About />} />
+                <Route path="/about" element={<About theme={theme} setTheme={setTheme} />} />
                  
               </Routes>
           </Router>

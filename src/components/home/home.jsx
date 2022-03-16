@@ -7,15 +7,22 @@ import ThemeIcon from "../theme_icon/themeIcon"
 
 function Home(props) {
 
-    const [width, setWindowWidth] = useState(0)   
+    const [width, setWindowWidth] = useState(0)
+    const [isLoading, setIsLoading] = useState(true)
+       
+    function demoAsyncCall() {
+      return new Promise((resolve) => setTimeout(() => resolve(), 20));
+      }
 
     useEffect(() => { 
 
         updateDimensions();
    
-        window.addEventListener("resize", updateDimensions);     
+        window.addEventListener("resize", updateDimensions);   
+        
+        demoAsyncCall().then(() => setIsLoading(false));
 
-        return () => window.removeEventListener("resize",updateDimensions);    }, 
+        return () => window.removeEventListener("resize",updateDimensions); }, 
         
         [width]
         
@@ -33,6 +40,7 @@ function Home(props) {
 
 
     return (
+        isLoading ? <h1>Loading....</h1>:
         <div className='App-home'>
             <div className='Container-profile-picture-cart'>
                 <ProfilePictureCart />
@@ -40,8 +48,11 @@ function Home(props) {
             <ProfilePictureCart />
             <div className='Container-info'>
                 <div className='title-text-container'>
-                    <text className='title-text'>Satish Badrinath Pophale</text>
+                    <text className='title-text'>SATISH BADRINATH POPHALE</text>
+                    
                 </div>
+
+                <text className='title-text' style={{color:'white'}}>FULL-STACK DEVELOPER</text>
 
                 <div className='sub-text-container'>
                     <text className='sub-text'>I'm software developer with 3+ years of experience. My most of the experience in app developer.</text>
@@ -50,10 +61,9 @@ function Home(props) {
             </div>
             
             <SideBar />
-            <ThemeIcon />
+            <ThemeIcon {...props} />
             
         </div>
-        
     )
 };
 

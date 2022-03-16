@@ -4,38 +4,13 @@ import ThemeIcon from "../theme_icon/themeIcon"
 
 
 
-function About() {
+function About(props) {
 
     return (
         <div>
             <h1>About</h1>
-            {/* <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1><h1>About</h1>
-
-            <h1>About</h1><h1>About</h1>
-            <h1>About</h1>
-            <h1>About</h1> */}
             <SideBar />
-            <ThemeIcon />
+            <ThemeIcon {...props} />
         </div>
     )
 };
