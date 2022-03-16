@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 // import './home.css'
 import ProfilePictureCart from '../profile_picture_cart/ProfilePictureCart.jsx'
 import SideBar from "../sidebar/sideBar";
+import ThemeIcon from "../theme_icon/themeIcon"
 
 
 function Home(props) {
@@ -38,11 +39,18 @@ function Home(props) {
              </div>
             <ProfilePictureCart />
             <div className='Container-info'>
-                <h2>Satish Badrinath Pophale</h2>
-                <p>I'm software developer with 3+ years of experience. My most of the experience in app developer.</p>
+                <div className='title-text-container'>
+                    <text className='title-text'>Satish Badrinath Pophale</text>
+                </div>
+
+                <div className='sub-text-container'>
+                    <text className='sub-text'>I'm software developer with 3+ years of experience. My most of the experience in app developer.</text>
+                </div>
+                
             </div>
             
             <SideBar />
+            <ThemeIcon />
             
         </div>
         

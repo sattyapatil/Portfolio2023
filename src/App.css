@@ -1,22 +1,7 @@
 .App {
-  text-align: center;
   flex-grow: 1;
   flex: 1;
-}
-
-.theme-icon-container {
-  position: fixed;
-  z-index: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  color: var(--text-color1);
-  margin-top: 2%;
-  top: 0;
-  right: 0;
-  margin-right: 3%;
-  background-color: var(--icon-backgound-color1);
-  border-radius: 50%;
-  padding: 10px;
+  background-color: var(--background-color);
+  width: 100%;
 }

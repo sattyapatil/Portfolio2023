@@ -8,7 +8,6 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
     color: var(--text-color1);
   }
 
@@ -39,3 +38,27 @@
     padding-right: 15%;
     padding-left: 20%;
   }
+
+  .title-text {
+    font-size: var(--title-text-font-size);
+    font-family: var(--title-text-font-family);
+    color: var(--theme-color1);
+    font-weight: bold;
+  }
+  
+.sub-text {
+    font-size: var(--sub-text-font-size);
+    font-family: var(--sub-text-font-family);
+    color: var(--text-color1);
+
+}
+
+.title-text-container {
+  margin-top: 5%;
+}
+.sub-text-container {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
