@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from "react";
+
+import { HiArrowSmRight } from 'react-icons/hi'
 // import './home.css'
 import ProfilePictureCart from '../profile_picture_cart/ProfilePictureCart.jsx'
 import SideBar from "../sidebar/sideBar";
@@ -52,10 +54,19 @@ function Home(props) {
                     
                 </div>
 
-                <text className='title-text' style={{color:'white'}}>FULL-STACK DEVELOPER</text>
+                <text className='sub-text-container' style={{fontSize:'20px', fontWeight:'bold', fontFamily:"Times New Roman"}}>FULL-STACK DEVELOPER</text>
 
                 <div className='sub-text-container'>
                     <text className='sub-text'>I'm software developer with 3+ years of experience. My most of the experience in app developer.</text>
+                </div>
+
+                <div className='about-me-button'>
+                    <div className='about-me-button-text-container'>
+                        <text>About me</text>
+                    </div>
+                     <div className='about-me-button-icon-container'>
+                        <HiArrowSmRight />
+                    </div>
                 </div>
                 
             </div>

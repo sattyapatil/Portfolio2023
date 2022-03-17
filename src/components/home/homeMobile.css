@@ -69,3 +69,36 @@
     margin-right: 5%;
     text-align: center;
 }
+
+.about-me-button {
+    flex-grow: 1;
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    width: 50%;
+    padding: 2%;
+    margin: 10%;
+    border: 5px solid;
+    border-color: var(--theme-color2);
+    border-radius: 50px/50px;
+}
+
+.about-me-button-icon-container {
+    flex-grow: 1;
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5em
+}
+
+.about-me-button-text-container {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em
+}
