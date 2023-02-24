@@ -1,58 +1,75 @@
 .experience-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.experience-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #4b4b4b;
+}
+
+.experience-card h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #8f8f8f;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  margin: 0;
+  font-size: 18px;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+}
+
+.experience-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.experience-card-icon {
+  font-size: 30px;
+  color: #4b4b4b;
+  margin-right: 20px;
+}
+
+.experience-card-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-card-date {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    text-align: center;
+  }
+
+  .experience-card-header {
     flex-direction: column;
-  }
-  
-  .experience-card h3 {
-    margin: 0;
-    font-size: 24px;
-    color: #4b4b4b;
-  }
-  
-  .experience-card h4 {
-    margin: 0;
-    font-size: 20px;
-    color: #8f8f8f;
+    align-items: center;
     margin-bottom: 10px;
   }
-  
-  .experience-card p {
-    margin: 0;
-    font-size: 18px;
-    color: #4b4b4b;
+
+  .experience-card-icon {
+    margin-right: 0;
     margin-bottom: 10px;
   }
-  
-  .experience-card .company-logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 30px;
-    overflow: hidden;
-  }
-  
-  .experience-card .company-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  @media (max-width: 768px) {
-    .experience-card {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .experience-card .company-logo {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  }
-  
+}

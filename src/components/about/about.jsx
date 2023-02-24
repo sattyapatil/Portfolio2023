@@ -5,7 +5,7 @@ import "./about.css"
 import myPhoto from './logo192.png';
 import ProfilePictureCart from "../profile_picture_cart/ProfilePictureCart";
 import ExperienceCard from "./experience_cart/experienceCart";
-
+import EducationCard from "./education_cart/educationCart";
 
 
 function About(props) {
@@ -37,26 +37,25 @@ function About(props) {
                     <h1 className="heading">Experience & Education</h1>
                 </div>
                 <div className="experience-education">
-                    {/* <div className="experience">
-                        <div>
-                            <p>Company: Phynart</p>
-                            <p>Designation: SDE</p>
-                            <p>Responsibilities: Managing and devloping apis</p>
-                        </div>
+                    <div className="experience">
+                        <ExperienceCard
+                            title="SDE - Backend Developer"
+                            company="Phynart"
+                            date="Jan 2020 - Present"
+                            // location="Patil Nagar, Bavdhan, Pune, 411021"
+                            description="Home automation company"
+                            />
                     </div>
                     <div className="education">
-                        <div>
-                            <p>Company: Phynart</p>
-                            <p>Designation: SDE</p>
-                            <p>Responsibilities: Managing and devloping apis</p>
-                        </div>
-                    </div> */}
-                    <ExperienceCard
-                        company="ABC Company"
-                        position="Web Developer"
-                        date="Jan 2020 - Present"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ut lorem sed bibendum. Nulla facilisi."
+                        <EducationCard 
+                            university="BE"
+                            degree="Pune Univercity"
+                            field="Electronics and Telemmunication"
+                            startDate="Sep - 2015"
+                            endDate="Sep - 2018"
                         />
+                    </div>
+                    
 
                 </div>
 

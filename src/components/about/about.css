@@ -143,7 +143,6 @@
   }
   
   
-
   /* button section end */
   
   /* Experience and Education section end */
@@ -152,8 +151,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 50px 0; */
-    /* max-width: 1000px; */
     width: 100%;
     flex-direction: column;
   }
@@ -168,6 +165,9 @@
     /* margin: 0 20px; */
   }
 }
+
+
+
 
 /* Styles for desktop */
 @media screen and (min-width: 1024px) {
