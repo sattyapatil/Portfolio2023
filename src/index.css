@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --background-color-light: rgb(255, 255, 255);
+  --background-color-dark: rgb(26, 26, 26);
+  --side-bar-background-color-light1: rgb(204, 204, 204);
+  --side-bar-background-color-dark1: rgb(65, 65, 65);
+  --theme-color-dark1: rgb(255, 174, 0);
+  --theme-color-light1: rgb(0, 255, 21);
+  --theme-color-dark2: rgb(255, 195, 66);
+  --theme-color-light2: rgb(86, 253, 100);
+  --theme-color-dark3: rgb(253, 222, 155);
+  --theme-color-light3: rgb(174, 255, 181);
+  --text-color-dark1: rgb(251, 255, 252);
+  --text-color-light1: rgb(26, 26, 26);
+
+  --icon-backgound-color-light1: rgb(231, 231, 231);
+  --icon-backgound-color-dark1: rgb(54, 54, 54);
+
+  --title-text-font-family: "Times New Roman", Times, serif;
+  --sub-text-font-family: 'Courier New', Courier, monospace;
+  --title-text-font-size: 25px;
+  --sub-text-font-size: 20px;
+}

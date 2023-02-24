@@ -1,0 +1,322 @@
+
+/* Styles for mobile */
+@media screen and (max-width: 1023px) {
+  /* ... */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 20%; */
+    width: 100%;
+    color: var(--text-color1);
+    /* height: 100vh; */
+    margin-top: 100px;
+    margin-bottom: 10%;
+  }
+
+  .Container-profile-picture-cart {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-color1);
+    background-image: linear-gradient(to bottom, var(--theme-color1) ,var(--theme-color2));
+    /* height: 50vh;
+    width: 100%; */
+    color: var(--text-color1);
+    align-items: center;
+    justify-content: center;
+    /* clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 60% 0%); */
+}
+  
+  .end-line {
+    content: "";
+    width: 90%;
+    height: 0.5px;
+    background-color: var(--theme-color2);
+    margin: 10px;
+  }
+  
+  
+  .personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 50px 0; */
+    /* max-width: 1000px; */
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .photo {
+    display: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .info {
+    max-width: 50%;
+    margin: 0 20px;
+    /* text-align: center; */
+  }
+  
+  .info h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  
+  .info h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  .info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  .heading {
+    font-size: 30px;
+    color: var(--theme-color1);
+  }
+  
+  /* button section start */
+  
+  .resume-button {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 5px solid;
+    border-color: var(--theme-color2);
+    border-radius: 50px/50px;
+    /* background-color: #fff; */
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--theme-color1);
+    margin-top: 20px;
+  }
+  
+  .resume-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e61010;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #d61b1b;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume-button:hover:before {
+    transform: translateX(0);
+  }
+  
+  .resume-button:hover:after {
+    transform: translateX(0);
+  }
+  
+  
+
+  /* button section end */
+  
+  /* Experience and Education section end */
+  
+  .experience-education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 50px 0; */
+    /* max-width: 1000px; */
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .experience {
+    /* width: 50%; */
+    /* margin: 0 20px; */
+  }
+  
+  .education {
+    /* max-width: 50%; */
+    /* margin: 0 20px; */
+  }
+}
+
+/* Styles for desktop */
+@media screen and (min-width: 1024px) {
+  /* ... */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+    width: 100%;
+    color: var(--text-color1);
+    height: 100vh;
+    margin-top: 100px;
+  }
+  
+  .end-line {
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--theme-color2);
+    margin: 10px;
+  }
+  
+  .personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 50px 0; */
+    /* max-width: 1000px; */
+    width: 100%;
+  }
+  
+  .photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .info {
+    max-width: 50%;
+    margin: 0 20px;
+    /* text-align: center; */
+  }
+  
+  .info h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  
+  .info h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  .info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  .heading {
+    font-size: 50px;
+    color: var(--theme-color1);
+  }
+  
+  /* button section start */
+  
+  .resume-button {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 5px solid;
+    border-color: var(--theme-color2);
+    border-radius: 50px/50px;
+    /* background-color: #fff; */
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--theme-color1);
+    margin-top: 20px;
+  }
+  
+  .resume-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e61010;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #d61b1b;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume-button:hover:before {
+    transform: translateX(0);
+  }
+  
+  .resume-button:hover:after {
+    transform: translateX(0);
+  }
+  
+  
+  
+  
+  /* button section end */
+  
+  /* Experience and Education section end */
+  
+  .experience-education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 50px 0; */
+    /* max-width: 1000px; */
+    width: 100%;
+  }
+  
+  .experience {
+    width: 50%;
+    margin: 0 20px;
+  }
+  
+  .education {
+    max-width: 50%;
+    margin: 0 20px;
+  }
+}
+

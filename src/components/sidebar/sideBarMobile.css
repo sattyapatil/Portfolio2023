@@ -1,0 +1,195 @@
+.side-bar {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--side-bar-background-color);
+    background-image: linear-gradient(to top, var(--side-bar-background-color), var(--background-color));
+    font-size: medium;
+    color: var(--theme-color1);
+    height: 120px;
+    width: 100%;
+}
+
+.side-bar-elements {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color1);
+}
+
+
+.selected-side-bar-element {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme-color1);
+}
+
+.side-bar-element-icon {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    /* height: 50px; */
+    background-color: var(--icon-backgound-color1);
+    border-radius: 50%;
+    border: 5px solid var(--theme-color1);
+    padding: 15%;
+}
+
+.side-bar-element-text {
+    flex-grow: 1;
+    flex: 1;
+    visibility: hidden;
+    font-size: 70%;
+}
+
+.side-bar-element {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.side-bar-element:hover .side-bar-element-text{
+    visibility: visible;
+    color: var(--theme-color1);
+    animation: anim_text 2s infinite;
+    
+}
+
+.side-bar-element:hover .side-bar-element-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    /* height: 50px; */
+    border-radius: 50%;
+    animation: anim_menu_icon 5s infinite;
+    padding: 15%;
+}
+
+
+@keyframes anim_menu_icon {
+    0%,
+    100% {
+        border: 5px solid var(--theme-color1);
+        color: var(--theme-color1);
+        background-color: var(--icon-backgound-color1);
+    }
+  
+    10% {
+        border: 5px solid var(--theme-color2);
+        color: var(--theme-color2);
+        background-color: var(--icon-backgound-color1);
+    }
+  
+    20% {
+        border: 5px solid var(--theme-color3);
+        color: var(--theme-color3);
+        background-color: var(--icon-backgound-color1);
+    }
+  
+    30% {
+        border: 5px solid var(--theme-color1);
+        color: var(--theme-color1);
+        background-color: var(--icon-backgound-color1);
+    }
+  
+    40% {
+        border: 5px solid var(--theme-color2);
+        color: var(--theme-color2);
+        background-color: var(--icon-backgound-color1);
+    }
+  
+    50% {
+        border: 5px solid var(--theme-color3);
+        color: var(--theme-color3);
+        background-color: var(--icon-backgound-color1);
+    }
+  
+    60% {
+        border: 5px solid var(--theme-color1);
+    }
+  
+    70% {
+        border: 5px solid var(--theme-color2);
+    }
+  
+    80% {
+        border: 5px solid var(--theme-color3);
+    }
+  
+    90% {
+        border: 5px solid var(--theme-color1);
+    }
+  }
+
+  @keyframes anim_text {
+    0%,
+    100% {
+        color: var(--theme-color1);
+    }
+  
+    10% {
+        /* border: 5px solid rgb(255, 179, 15); */
+        color: var(--theme-color2);
+    }
+  
+    20% {
+        /* border: 5px solid rgb(252, 188, 50); */
+        color: var(--theme-color3);
+    }
+  
+    30% {
+        /* border: 5px solid rgb(252, 199, 86); */
+        color: var(--theme-color1);
+    }
+  
+    40% {
+        /* border: 5px solid rgb(253, 210, 118); */
+        color: var(--theme-color2);
+    }
+  
+    50% {
+        /* border: 5px solid rgb(252, 223, 160); */
+        color: var(--theme-color3);
+    }
+  
+    60% {
+        /* border: 5px solid rgb(255, 179, 15); */
+        color: var(--theme-color1);
+    }
+  
+    70% {
+        /* border: 5px solid rgb(252, 188, 50); */
+        color: var(--theme-color2);
+    }
+  
+    80% {
+        /* border: 5px solid rgb(252, 199, 86); */
+        color: var(--theme-color3);
+    }
+  
+    90% {
+        /* border: 5px solid rgb(252, 223, 160); */
+        color: var(--theme-color1);
+    }
+  }
+  

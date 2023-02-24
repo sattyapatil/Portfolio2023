@@ -1,0 +1,112 @@
+.App-home {
+    flex-grow: 1;
+    flex: 1;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: var(--text-color1);
+}
+
+.Container-profile-picture-cart {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-color1);
+    background-image: linear-gradient(to bottom, var(--theme-color1) ,var(--theme-color2));
+    /* height: 50vh;
+    width: 100%; */
+    color: var(--text-color1);
+    align-items: center;
+    justify-content: center;
+    /* clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 60% 0%); */
+}
+
+.Container-info {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--background-color);
+    /* min-height: 100vh; */
+    /* width: 70%; */
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: var(--text-color1);
+    top: 38vh;
+    padding-bottom: 20vh;
+}
+
+.title-text {
+    font-size: var(--title-text-font-size);
+    font-family: var(--title-text-font-family);
+    color: var(--theme-color1);
+    font-weight: bold;
+  }
+  
+.sub-text {
+    font-size: var(--sub-text-font-size);
+    font-family: var(--sub-text-font-family);
+    color: var(--text-color1);
+
+}
+
+.sub-text-role {
+    font-size: 18px;
+    font-family: var(--sub-text-font-family);
+    color: var(--text-color1);
+    font-weight:'bold';
+    font-family: "Times New Roman";
+}
+
+.title-text-container {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.sub-text-container {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.about-me-button {
+    flex-grow: 1;
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    width: 50%;
+    padding: 2%;
+    margin: 10%;
+    border: 5px solid;
+    border-color: var(--theme-color2);
+    border-radius: 50px/50px;
+}
+
+.about-me-button-icon-container {
+    flex-grow: 1;
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5em
+}
+
+.about-me-button-text-container {
+    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em
+}
