@@ -7,6 +7,7 @@ import {
 import './App.css';
 import Home from './components/home/home'
 import About from './components/about/about';
+import Portfolio from './components/portfolio/portfolio';
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
                 <Route exact path="/" element={<Home theme={theme} setTheme={setTheme}  />} />
                   
                 <Route path="/about" element={<About theme={theme} setTheme={setTheme} />} />
+
+                <Route path="/portfolio" element={<Portfolio theme={theme} setTheme={setTheme} />} />
                  
               </Routes>
           </Router>

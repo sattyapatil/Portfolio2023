@@ -68,10 +68,10 @@ function SideBar(props) {
                 </div>
                 <div className='side-bar-element'>
                     <span className='side-bar-element-text'>
-                        <h2>Experience</h2>
+                        <h2>Portfolio</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <MdWork style={iconStyles} />
+                        <MdWork style={iconStyles} onClick={() => navigate('/portfolio')} />
                     </span>
                 </div>
                 <div className='side-bar-element'>

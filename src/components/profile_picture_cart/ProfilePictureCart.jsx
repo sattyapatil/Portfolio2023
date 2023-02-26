@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import './ProfilePictureCart.css'
-import profPicture from './satish-face.png'
+import profPicture from './Satish1.jpg'
 
 
 function ProfilePictureCart(props) {
@@ -32,6 +32,7 @@ function ProfilePictureCart(props) {
     
     return (
         <div className='profile-picture-cart'>
+            <div className='skill-card-img-overlay'></div>
             <img src={profPicture} alt="it's me"/> 
         </div>
     )

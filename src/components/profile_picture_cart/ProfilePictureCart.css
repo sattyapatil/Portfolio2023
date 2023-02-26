@@ -2,12 +2,12 @@
 @media screen and (max-width: 1023px) {
   /* ... */
   img {
-    width: 70%;
+    width: 100%;
     height: 100%;
   }
   
   .profile-picture-cart {
-      /* animation: anim 20s infinite; */
+      /* animation: anim 10s infinite; */
       flex: 1;
       position: absolute;
       z-index: 1;
@@ -32,71 +32,136 @@
       top: 10%;
       overflow: hidden;
     }
-  
-    @keyframes anim {
+
+    .skill-card-img-overlay {
+      animation: anim-overlay 2s infinite;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* height: 100%; */
+      /* background-color: rgba(12, 12, 12, 0.418); */
+    }
+
+    @keyframes anim-overlay {
       0%,
       100% {
-        border-radius: 5%;
-        box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(26, 26, 26) inset,
-          0 -2vmin 7vmin rgb(255, 195, 66) inset;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.100);
       }
     
       10% {
-        border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.120);
       }
     
       20% {
-        border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.150);
       }
     
       30% {
-        border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
-        box-shadow: 0 -4vmin 8vmin rgb(26, 26, 26) inset, -1vmin -2vmin 6vmin rgb(104, 102, 102) inset,
-          -1vmin -2vmin 4vmin rgb(255, 195, 66) inset, 1vmin 4vmin 8vmin rgb(255, 195, 66) inset;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.200);
       }
     
       40% {
-        border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.250);
       }
     
       50% {
-        border-radius: 5%;
-        box-shadow: 0 4vmin 16vmin rgb(26, 26, 26) inset, 0 2vmin 5vmin rgb(165, 165, 165) inset, 
-          0 4vmin 4vmin rgb(255, 195, 66) inset,
-          0 6vmin 8vmin rgb(255, 195, 66) inset;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.300);
       }
     
       60% {
-        border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.350);
       }
     
       70% {
-        border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
-        box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(85, 85, 85) inset,
-          0 -2vmin 7vmin rgb(255, 195, 66) inset;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.400);
       }
     
       80% {
-        border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.450);
       }
     
       90% {
-        border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.500);
+      }
+    }
+  
+
+    @keyframes anim {
+      0%,
+      100% {
+        /* border-radius: 5%; */
+        box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(26, 26, 26) inset,
+          0 -2vmin 7vmin var(--theme-color1) inset;
+      }
+    
+      10% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      20% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+      }
+    
+      30% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+        box-shadow: 0 -4vmin 8vmin rgb(26, 26, 26) inset, -1vmin -2vmin 6vmin rgb(104, 102, 102) inset,
+          -1vmin -2vmin 4vmin var(--theme-color1) inset, 1vmin 4vmin 8vmin var(--theme-color2) inset;
+      }
+    
+      40% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+      }
+    
+      50% {
+        /* border-radius: 5%; */
+        box-shadow: 0 4vmin 16vmin rgb(26, 26, 26) inset, 0 2vmin 5vmin rgb(165, 165, 165) inset, 
+          0 4vmin 4vmin var(--theme-color1) inset,
+          0 6vmin 8vmin var(--theme-color2) inset;
+      }
+    
+      60% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      70% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+        box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(85, 85, 85) inset,
+          0 -2vmin 7vmin var(--theme-color1) inset;
+      }
+    
+      80% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      90% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
       }
     }
     
 }
 
+
+
 /* Styles for desktop */
 @media screen and (min-width: 1024px) {
   /* ... */
   img {
-    width: 70%;
+    width: 100%;
     height: 100%;
   }
   
   .profile-picture-cart {
-      /* animation: anim 20s infinite; */
+      /* animation: anim 10s infinite; */
       flex: 1;
       position: absolute;
       background: radial-gradient(circle at 0% 0%, rgb(54, 54, 54), rgb(26, 26, 26));;
@@ -120,56 +185,118 @@
       top: 5%;
       overflow: hidden;
     }
+
+    .skill-card-img-overlay {
+      animation: anim-overlay 2s infinite;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* height: 100%; */
+      /* background-color: rgba(0, 0, 0, 0.062); */
+    }
+
+    @keyframes anim-overlay {
+      0%,
+      100% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.100);
+      }
+    
+      10% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.120);
+      }
+    
+      20% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.150);
+      }
+    
+      30% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.200);
+      }
+    
+      40% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.250);
+      }
+    
+      50% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.300);
+      }
+    
+      60% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.350);
+      }
+    
+      70% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.400);
+      }
+    
+      80% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.450);
+      }
+    
+      90% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.500);
+      }
+    }
   
     @keyframes anim {
       0%,
       100% {
-        border-radius: 5%;
+        /* border-radius: 5%; */
         box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(26, 26, 26) inset,
-          0 -2vmin 7vmin rgb(255, 195, 66) inset;
+          0 -2vmin 7vmin var(--theme-color1) inset;
       }
     
       10% {
-        border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
       }
     
       20% {
-        border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
       }
     
       30% {
-        border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
         box-shadow: 0 -4vmin 8vmin rgb(26, 26, 26) inset, -1vmin -2vmin 6vmin rgb(104, 102, 102) inset,
-          -1vmin -2vmin 4vmin rgb(255, 195, 66) inset, 1vmin 4vmin 8vmin rgb(255, 195, 66) inset;
+          -1vmin -2vmin 4vmin var(--theme-color1) inset, 1vmin 4vmin 8vmin var(--theme-color1) inset;
       }
     
       40% {
-        border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
       }
     
       50% {
-        border-radius: 5%;
+        /* border-radius: 5%; */
         box-shadow: 0 4vmin 16vmin rgb(26, 26, 26) inset, 0 2vmin 5vmin rgb(165, 165, 165) inset, 
-          0 4vmin 4vmin rgb(255, 195, 66) inset,
-          0 6vmin 8vmin rgb(255, 195, 66) inset;
+          0 4vmin 4vmin var(--theme-color1) inset,
+          0 6vmin 8vmin var(--theme-color2) inset;
       }
     
       60% {
-        border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
       }
     
       70% {
-        border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
         box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(85, 85, 85) inset,
-          0 -2vmin 7vmin rgb(255, 195, 66) inset;
+          0 -2vmin 7vmin var(--theme-color1) inset;
       }
     
       80% {
-        border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
       }
     
       90% {
-        border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
       }
     }
     
