@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 
 import { HiArrowSmRight } from 'react-icons/hi'
 import './home.css'
@@ -48,7 +48,7 @@ function Home(props) {
             <div className='Container-profile-picture-cart'>
                 <ProfilePictureCart />
              </div>
-            {/* <ProfilePictureCart /> */}
+            <ProfilePictureCart />
             <div className='Container-info'>
                 <div className='title-text-container'>
                     <text className='title-text'>I'm SATISH POPHALE</text>

@@ -2,7 +2,7 @@
 @media screen and (max-width: 1023px) {
   /* ... */
   img {
-    width: 100%;
+    width: 70%;
     height: 100%;
   }
   
@@ -30,6 +30,7 @@
       margin-left: 2.5%;
       /* left: 30%; */
       top: 10%;
+      overflow: hidden;
     }
   
     @keyframes anim {
@@ -90,8 +91,8 @@
 @media screen and (min-width: 1024px) {
   /* ... */
   img {
-    width: 150%;
-    height: 80%;
+    width: 70%;
+    height: 100%;
   }
   
   .profile-picture-cart {
@@ -117,6 +118,7 @@
       margin-left: 2.5%;
       left: 0;
       top: 5%;
+      overflow: hidden;
     }
   
     @keyframes anim {
