@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 
 import { HiArrowSmRight } from 'react-icons/hi'
+import { FaLinkedin, FaGithub, FaTwitter, FaMedium} from 'react-icons/fa';
 import './home.css'
 import ProfilePictureCart from '../profile_picture_cart/ProfilePictureCart.jsx'
 import SideBar from "../sidebar/sideBar";
 import ThemeIcon from "../theme_icon/themeIcon"
 import InitialLoader from "../loaders/initial_loader/initialLoader"
+import SocialMediaCard from "../social_media_card/social_media_card";
 
 
 function Home(props) {
@@ -68,6 +70,21 @@ function Home(props) {
                      <div className='about-me-button-icon-container'>
                         <HiArrowSmRight />
                     </div>
+                </div>
+
+                <div className="social-field-container">
+                    <SocialMediaCard  
+                        name='linkedin' icon={<FaLinkedin className="social-icon linkedin" />} link={'https://linkedin.com'}
+                    />
+                     <SocialMediaCard  
+                        name='github' icon={<FaGithub className="social-icon github" />} link={'https://github.com'}
+                    />
+                     <SocialMediaCard  
+                        name='twitter' icon={<FaTwitter className="social-icon twitter" />} link={'https://twitter.com'}
+                    />
+                    <SocialMediaCard  
+                        name='medium' icon={<FaMedium className="social-icon medium" />} link={'https://twitter.com'}
+                    />
                 </div>
                 
             </div>
