@@ -105,6 +105,8 @@
 
     
     .resume-button {
+        flex: 1;
+        width: 70%;
         margin: 5%
     }
     
@@ -248,6 +250,8 @@
     }
 
     .resume-button {
+        flex: 1;
+        width: 70%;
         margin: 5%
     }
 

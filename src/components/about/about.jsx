@@ -1,4 +1,5 @@
 import React from "react";
+import { HiArrowSmDown } from 'react-icons/hi'
 import SideBar from "../sidebar/sideBar";
 import ThemeIcon from "../theme_icon/themeIcon"
 import "./about.css"
@@ -15,6 +16,7 @@ import ProfilePictureCart from "../profile_picture_cart/ProfilePictureCart";
 import ExperienceCard from "./experience_cart/experienceCart";
 import EducationCard from "./education_cart/educationCart";
 import SkillCard from "./skill_card/skillCard"
+import Button from "../button/about_me_button"
 
 
 function About(props) {
@@ -38,7 +40,8 @@ function About(props) {
                             Proficient in multiple frameworks and always eager to learn.
                             </p>
                             <div class="resume-button">
-                                <a href="/path/to/cv.pdf" download>Download Resume</a>
+                                <Button text="Download Resume" onClick={()=>{console.log("My name is Satish")}} icon={<HiArrowSmDown />} />
+                                {/* <a href="/path/to/cv.pdf" download>Download Resume</a> */}
                             </div>
                         </div>
                     </div>

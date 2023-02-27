@@ -82,16 +82,16 @@
 }
 
 .about-me-button {
-    flex-grow: 1;
-    flex: 1;
+    /* flex-grow: 1;
+    flex: 1; */
     flex-direction: row;
     display: flex;
     width: 50%;
     padding: 2%;
     margin: 10%;
-    border: 5px solid;
+    /* border: 5px solid;
     border-color: var(--theme-color2);
-    border-radius: 50px/50px;
+    border-radius: 50px/50px; */
 }
 
 .about-me-button-icon-container {
@@ -210,11 +210,11 @@
   flex-direction: row;
   display: flex;
   width: 50%;
-  padding: 1%;
+  /* padding: 1%; */
   margin: 10%;
-  border: 5px solid;
+  /* border: 5px solid;
   border-color: var(--theme-color2);
-  border-radius: 50px/50px;
+  border-radius: 50px/50px; */
 }
 
 .about-me-button-icon-container {

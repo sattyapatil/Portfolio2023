@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useNavigate } from 'react-router-dom';
 
 import { HiArrowSmRight } from 'react-icons/hi'
 import { FaLinkedin, FaGithub, FaTwitter, FaMedium} from 'react-icons/fa';
@@ -8,7 +9,7 @@ import SideBar from "../sidebar/sideBar";
 import ThemeIcon from "../theme_icon/themeIcon"
 import InitialLoader from "../loaders/initial_loader/initialLoader"
 import SocialMediaCard from "../social_media_card/social_media_card";
-
+import Button from "../button/about_me_button"
 
 function Home(props) {
 
@@ -18,6 +19,12 @@ function Home(props) {
     function demoAsyncCall() {
       return new Promise((resolve) => setTimeout(() => resolve(), 20));
       }
+
+      const navigate = useNavigate();
+      
+        const onClick = () => {
+          navigate('/about');
+        };
 
     // useEffect(() => { 
 
@@ -64,12 +71,13 @@ function Home(props) {
                 </div>
 
                 <div className='about-me-button'>
-                    <div className='about-me-button-text-container'>
+                    {/* <div className='about-me-button-text-container'>
                         <text>About me</text>
                     </div>
                      <div className='about-me-button-icon-container'>
                         <HiArrowSmRight />
-                    </div>
+                    </div> */}
+                    <Button text="About Me" onClick={()=>onClick()} icon={<HiArrowSmRight />} />
                 </div>
 
                 <div className="social-field-container">

@@ -43,13 +43,13 @@
     align-items: center;
     text-decoration: none;
     color: var(--text-color1);
-    font-size: 16px;
+    font-size: 10px;
     margin: 0 20px;
   }
   
   .social-media-icon {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,8 +59,8 @@
   }
   
   .social-media-icon svg {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     fill: var(--text-color1);
   }
   
