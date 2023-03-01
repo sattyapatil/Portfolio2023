@@ -1,0 +1,23 @@
+/* SkillCard.css */
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-icon {
+    position: relative;
+  }
+  
+  .skill-icon img {
+    width: 80px;
+  }
+  
+  .skill-name {
+   font-weight: bold;
+   font-size: large;
+  }
+
+  .social-icon {
+    font-size: 40px;
+  }

@@ -1,6 +1,11 @@
 /* Styles for mobile */
 @media screen and (max-width: 1023px) {
   /* ... */
+  .main {
+    flex-grow: 1;
+    flex:1;
+    display: flex;
+  }
   .App-home {
     flex-grow: 1;
     flex: 1;
@@ -127,6 +132,11 @@
 /* Styles for desktop */
 @media screen and (min-width: 1024px) {
   /* ... */
+  .main {
+    flex-grow: 1;
+    flex:1;
+    display: flex;
+  }
   .App-home {
     flex-grow: 1;
     flex: 1;
@@ -138,6 +148,7 @@
     align-items: flex-start;
     justify-content: center;
     color: var(--text-color1);
+    margin: 0 auto;
   }
 
   .Container-profile-picture-cart {

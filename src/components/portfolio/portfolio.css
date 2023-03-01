@@ -1,5 +1,11 @@
 /* Styles for mobile */
 @media screen and (max-width: 1023px) {
+  .main {
+    flex-grow: 1;
+    flex:1;
+    display: flex;
+  }
+
   .portfolio-main-container {
       flex-grow: 1;
       flex: 1;
@@ -39,6 +45,11 @@
 
 /* Styles for desktop */
 @media screen and (min-width: 1024px) {
+    .main {
+        flex-grow: 1;
+        flex:1;
+        display: flex;
+      }
     .portfolio-main-container {
         flex-grow: 1;
         flex: 1;

@@ -2,6 +2,7 @@ import React from "react";
 import { HiArrowSmDown } from 'react-icons/hi'
 import SideBar from "../sidebar/sideBar";
 import ThemeIcon from "../theme_icon/themeIcon"
+import { motion } from 'framer-motion';
 import "./about.css"
 import myPhoto from './satish4.png';
 import reactLogo from './logo192.png'
@@ -15,14 +16,43 @@ import jsLogo from './js.png'
 import ProfilePictureCart from "../profile_picture_cart/ProfilePictureCart";
 import ExperienceCard from "./experience_cart/experienceCart";
 import EducationCard from "./education_cart/educationCart";
-import SkillCard from "./skill_card/skillCard"
+// import SkillCard from "./skill_card/skillCard"
+import SkillCard from "./skill_card_new/skill"
 import Button from "../button/about_me_button"
 
 
 function About(props) {
+    const pageVariants = {
+        initial: {
+          opacity: 0,
+          x: "-1000vw"
+        },
+        in: {
+          opacity: 1,
+          x: 0
+        },
+        out: {
+          opacity: 0,
+        }
+      };
+      
+      const pageTransition = {
+        type: "tween",
+        ease: "anticipate",
+        duration: 0.5
+      };
 
-    return (
-        <div>
+  return (
+    <div>
+        <motion.div
+        variants={pageVariants}
+        initial="initial"
+        animate="in"
+        exit="out"
+        transition={pageTransition}
+        >
+
+
             <div className="about-me">
                 <div>
                     <h1 className="heading">Personal Info</h1>
@@ -106,21 +136,21 @@ function About(props) {
                 <div className='skill-container'>
                     <div className='skill-inner'>
                         <SkillCard
-                        name='Python' image={pythonLogo}
+                        skill='Python' icon={pythonLogo} percentage={90}
                         />
                         <SkillCard
-                        name='Flask' image={flaskLogo}
+                        skill='Flask' icon={flaskLogo} percentage={90}
                         />
                         <SkillCard
-                        name='SQL' image={sqlLogo}
+                        skill='SQL' icon={sqlLogo} percentage={90}
                         />
                         <SkillCard
-                        name='Mongodb' image={mongodbLogo}
+                        skill='Mongodb' icon={mongodbLogo} percentage={90}
                         />
                         
                     </div>
                
-                    <div className='skill-inner'>
+                    {/* <div className='skill-inner'>
                         <SkillCard
                         name='HTML' image={htmlLogo}
                         />
@@ -134,16 +164,15 @@ function About(props) {
                         name='react' image={reactLogo}
                         />
                         
-                    </div>
+                    </div> */}
                 </div>
+            </div>
+        </motion.div>
 
                 
-
-            </div>
-
-            <SideBar />
-            <ThemeIcon {...props} />
-        </div>
+        <SideBar />
+        <ThemeIcon {...props} />
+    </div>
     )
 };
 

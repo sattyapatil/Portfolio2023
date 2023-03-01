@@ -79,7 +79,7 @@ function SideBar(props) {
                         <h2>Contact</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <MdContacts style={iconStyles} />
+                        <MdContacts style={iconStyles} onClick={() => navigate('/contact')} />
                     </span>
                 </div>
                 <div className='side-bar-element'>
