@@ -11,6 +11,7 @@
       margin: 0 auto;
       background-color: var(--background-color);
       margin-top: 10%;
+      margin-bottom: 100px;
     }
 
     .contact-container {
@@ -83,7 +84,7 @@
     }
     
     .contact-container textarea {
-      height: 200px;
+      height: 100px;
     }
     
     .contact-container button[type="submit"] {

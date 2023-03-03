@@ -150,7 +150,7 @@ function About(props) {
                         skill='Flask' icon={<SiFlask className="social-icon flask" x="30" y="30" />} percentage={90}
                         />
                         <SkillCard
-                        skill='SiFastapi' icon={<SiFlask className="social-icon fastapi" x="30" y="30" />} percentage={70}
+                        skill='SiFastapi' icon={<SiFastapi className="social-icon fastapi" x="30" y="30" />} percentage={70}
                         />
                         <SkillCard
                         skill='SQL' icon={<SiSqlite className="social-icon sqlite" x="30" y="30" />} percentage={70}

@@ -32,13 +32,13 @@ const SkillCard = ({ icon, skill, percentage }) => {
             cx="50"
             cy="50"
             r="45"
-            transition={{ delay: 0.2, duration: 1 }}
+            transition={{ delay: 0.1, duration: 0.1 }}
             fill="transparent"
             stroke={getColor(percentage)}
             strokeWidth={getStrokeWidth()}
             variants={variants}
             initial="initial"
-            whileInView={"animate"}
+            whileHover={"animate"}
             className="svg-container"
           />
             {icon}

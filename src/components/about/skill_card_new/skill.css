@@ -11,6 +11,12 @@
     
     .skill-icon {
       position: relative;
+      font-size: 5px;
+      /* border: 3px solid;
+      border-color: var(--theme-color1);
+      border-radius: 50%;
+      overflow: hidden; */
+      margin-bottom: 2px;
     }
     
     .skill-icon img {
@@ -19,7 +25,7 @@
     
     .skill-name {
     font-weight: bold;
-    font-size: small;
+    font-size: 10px;
     color: var(--text-color1);
     }
 
@@ -41,6 +47,12 @@
   
   .skill-icon {
     position: relative;
+    font-size: 30px;
+    /* border: 3px solid;
+    border-color: var(--theme-color1);
+    border-radius: 50%;
+    overflow: hidden; */
+    margin-bottom: 2px;
   }
   
   .skill-icon img {
