@@ -87,7 +87,7 @@ function SideBar(props) {
                         <h2>Blogs</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <ImBlogger style={iconStyles} />
+                        <ImBlogger style={iconStyles} onClick={() => navigate('/blogs')} />
                     </span>
                 </div>
                 

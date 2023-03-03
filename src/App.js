@@ -9,6 +9,7 @@ import Home from './components/home/home'
 import About from './components/about/about';
 import Portfolio from './components/portfolio/portfolio';
 import Contact from './components/contact/contact';
+import Blogs from './components/blogs/blogs'
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
                 <Route path="/portfolio" element={<Portfolio theme={theme} setTheme={setTheme} />} />
 
                 <Route path="/contact" element={<Contact theme={theme} setTheme={setTheme} />} />
+
+                <Route path="/blogs" element={<Blogs theme={theme} setTheme={setTheme} />} />
                  
               </Routes>
           </Router>
