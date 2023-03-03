@@ -1,7 +1,6 @@
 // SkillCard.js
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaTwitter, FaMedium} from 'react-icons/fa';
 import "./skill.css"
 
 const SkillCard = ({ icon, skill, percentage }) => {
@@ -28,27 +27,21 @@ const SkillCard = ({ icon, skill, percentage }) => {
     <div className="skill-card">
       <div className="skill-icon">
         {/* Use an SVG element to include both the circle and the image */}
-        <svg width="80" height="80" viewBox="0 0 100 100">
+        <svg width="40" height="40" viewBox="0 0 100 100">
           <motion.circle
             cx="50"
             cy="50"
             r="45"
+            transition={{ delay: 0.2, duration: 1 }}
             fill="transparent"
             stroke={getColor(percentage)}
             strokeWidth={getStrokeWidth()}
             variants={variants}
             initial="initial"
-            whileHover="animate"
+            whileInView={"animate"}
+            className="svg-container"
           />
-          {/* Use an image tag as a child of SVG */}
-            <FaTwitter className="social-icon twitter" x="30" y="30" />
-          {/* <image
-            href={icon}
-            x="15"
-            y="15"
-            width="70"
-            height="70"
-          /> */}
+            {icon}
         </svg>
       </div>
       <div className="skill-name">{skill}</div>

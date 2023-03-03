@@ -1,5 +1,7 @@
 import React from "react";
 import { HiArrowSmDown } from 'react-icons/hi'
+import { FaPython, FaCss3Alt, FaHtml5, FaReact, FaAws } from 'react-icons/fa';
+import { SiFlask, SiSqlite, SiMongodb, SiJavascript, SiFastapi } from 'react-icons/si';
 import SideBar from "../sidebar/sideBar";
 import ThemeIcon from "../theme_icon/themeIcon"
 import { motion } from 'framer-motion';
@@ -85,7 +87,9 @@ function About(props) {
                     <h1 className="heading">Experience & Education</h1>
                 </div>
                 <div className="experience-education">
+                    
                     <div className="experience">
+                        <h1 className="heading">Experience</h1>
                         <ExperienceCard
                             title="SDE - Backend Developer"
                             company="Phynart"
@@ -109,7 +113,10 @@ function About(props) {
                             description="As a fresher, I had the privilege of working in a dynamic startup environment, which provided me with a wealth of learning opportunities. I was involved in developing multiple projects from scratch, including a fund management platform and a multi-tenant platform. This gave me hands-on experience in software development and exposed me to different aspects of project management."
                             />
                     </div>
+
+                    
                     <div className="education">
+                    <h1 className="heading">Education</h1>
                         <EducationCard 
                             university="BE"
                             degree="Pune Univercity"
@@ -135,36 +142,73 @@ function About(props) {
                 </div>
                 <div className='skill-container'>
                     <div className='skill-inner'>
+                        
                         <SkillCard
-                        skill='Python' icon={pythonLogo} percentage={90}
+                        skill='Python' icon={<FaPython className="social-icon python" x="30" y="30" />} percentage={95}
                         />
                         <SkillCard
-                        skill='Flask' icon={flaskLogo} percentage={90}
+                        skill='Flask' icon={<SiFlask className="social-icon flask" x="30" y="30" />} percentage={90}
                         />
                         <SkillCard
-                        skill='SQL' icon={sqlLogo} percentage={90}
+                        skill='SiFastapi' icon={<SiFlask className="social-icon fastapi" x="30" y="30" />} percentage={70}
                         />
                         <SkillCard
-                        skill='Mongodb' icon={mongodbLogo} percentage={90}
+                        skill='SQL' icon={<SiSqlite className="social-icon sqlite" x="30" y="30" />} percentage={70}
                         />
+                        <SkillCard
+                        skill='Mongodb' icon={<SiMongodb className="social-icon mongodb" x="30" y="30" />} percentage={70}
+                        />
+                        
                         
                     </div>
                
-                    {/* <div className='skill-inner'>
-                        <SkillCard
-                        name='HTML' image={htmlLogo}
+                    <div className='skill-inner'>
+                    <SkillCard
+                        skill='HTML' icon={<FaHtml5 className="social-icon html" x="30" y="30" />} percentage={70}
                         />
                         <SkillCard
-                        name='CSS' image={cssLogo}
+                        skill='CSS' icon={<FaCss3Alt className="social-icon css" x="30" y="30" />} percentage={70}
                         />
                         <SkillCard
-                        name='JavaScript' image={jsLogo}
+                        skill='JavaScript' icon={<SiJavascript className="social-icon javascript" x="30" y="30" />} percentage={80}
                         />
                         <SkillCard
-                        name='react' image={reactLogo}
+                        skill='React' icon={<FaReact className="social-icon react" x="30" y="30" />} percentage={60}
+                        />
+                         <SkillCard
+                        skill='React Native' icon={<FaReact className="social-icon react" x="30" y="30" />} percentage={70}
                         />
                         
-                    </div> */}
+                    </div>
+                    <div className='skill-inner'>
+                    <SkillCard
+                        skill='Lambada' icon={<FaAws className="social-icon aws" x="30" y="30" />} percentage={80}
+                        />
+                        <SkillCard
+                        skill='SNS' icon={<FaAws className="social-icon aws" x="30" y="30" />} percentage={70}
+                        />
+                        <SkillCard
+                        skill='SQS' icon={<FaAws className="social-icon aws" x="30" y="30" />} percentage={80}
+                        />
+                        <SkillCard
+                        skill='Dynamodb' icon={<FaAws className="social-icon aws" x="30" y="30" />} percentage={70}
+                        />
+                         <SkillCard
+                        skill='Cognito' icon={<FaAws className="social-icon aws" x="30" y="30" />} percentage={70}
+                        />
+                    </div>
+                    <div className='skill-inner'>
+                    <SkillCard
+                        skill='IOT Core' icon={<FaAws className="social-icon aws" x="30" y="30" />} percentage={70}
+                        />
+                         <SkillCard
+                        skill='EC2' icon={<FaAws className="social-icon aws" x="30" y="30" />} percentage={80}
+                        />
+                        <SkillCard
+                        skill='S3' icon={<FaAws className="social-icon aws" x="30" y="30" />} percentage={70}
+                        />
+                    </div>
+                    
                 </div>
             </div>
         </motion.div>

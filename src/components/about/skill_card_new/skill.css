@@ -1,8 +1,42 @@
 /* SkillCard.css */
-.skill-card {
+
+/* Styles for mobile */
+@media screen and (max-width: 1023px) {
+  .skill-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+    
+    .skill-icon {
+      position: relative;
+    }
+    
+    .skill-icon img {
+      width: 40px;
+    }
+    
+    .skill-name {
+    font-weight: bold;
+    font-size: small;
+    color: var(--text-color1);
+    }
+
+    .svg-container {
+      z-index: 1;
+    }
+    
+}
+
+
+/* Styles for desktop */
+@media screen and (min-width: 1024px) {
+  .skill-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
   }
   
   .skill-icon {
@@ -14,10 +48,12 @@
   }
   
   .skill-name {
-   font-weight: bold;
-   font-size: large;
+  font-weight: bold;
+  font-size: large;
+  color: var(--text-color1);
   }
 
-  .social-icon {
-    font-size: 40px;
+  .svg-container {
+    z-index: 1;
   }
+}
