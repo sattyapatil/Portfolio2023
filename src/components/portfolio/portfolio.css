@@ -4,6 +4,7 @@
     flex-grow: 1;
     flex:1;
     display: flex;
+    margin-bottom: 120px;
   }
 
   .portfolio-main-container {
@@ -17,16 +18,16 @@
       max-width: 100%;
       min-height: 100vh;
       margin-top: 50px;
-      margin-bottom: 120px;
+     
       }
 
   .portfolio-sub-container {
         flex: 1;
         display: flex;
         flex-direction: column;
-        /* margin: 5%; */
-        width: 100%;
-        max-width: 70%;
+        margin: 10px;
+        width: 90%;
+        /* max-width: 70%; */
     }
 
     
@@ -49,6 +50,7 @@
         flex-grow: 1;
         flex:1;
         display: flex;
+        margin-bottom: 30px;
       }
     .portfolio-main-container {
         flex-grow: 1;

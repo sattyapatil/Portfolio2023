@@ -1,20 +1,36 @@
-import React from 'react';
-import './project_card.css'
+import { useState } from "react";
+import { motion } from "framer-motion";
+import "./project_card.css";
 
-const ProjectCard = ({ title, description, image, technologies, link }) => {
+const ProjectCard = ({ title, image, description }) => {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const handleClick = () => {
+    setShowDetails(!showDetails);
+  };
+
   return (
     <div className="project-card">
-      <img src={image} alt={title} />
-      <div className="project-details">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <div className="project-techs">
-          {technologies.map((tech, index) => (
-            <span key={index}>{tech}</span>
-          ))}
-        </div>
-        <a href={link} target="_blank" rel="noreferrer">View Project</a>
-      </div>
+      <motion.img
+        src={image}
+        alt={title}
+        className="project-card-image"
+        whileHover={{ scale: 1.05 }}
+        onClick={handleClick}
+      />
+      {showDetails && (
+        <motion.div
+          className="project-card-popup"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+        >
+          <button onClick={handleClick}>Close</button>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          
+        </motion.div>
+      )}
     </div>
   );
 };

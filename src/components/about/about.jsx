@@ -84,7 +84,7 @@ function About(props) {
                 <div className="end-line"></div>    
 
                 <div>
-                    <h1 className="heading">Experience & Education</h1>
+                    {/* <h1 className="heading">Experience & Education</h1> */}
                 </div>
                 <div className="experience-education">
                     
