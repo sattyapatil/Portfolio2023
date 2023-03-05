@@ -98,7 +98,7 @@ function Home(props) {
                         <text className='sub-text-role'>FULL-STACK DEVELOPER</text>
 
                         <div className='sub-text-container'>
-                            <text className='sub-text'>I'm software developer with 3+ years of experience. My most of the experience in app developer.</text>
+                            <text className='sub-text'>Experienced Python developer with a passion for solving complex problems. 4+ years of experience creating elegant and efficient software solutions. Dedicated to delivering high-quality code that meets and exceeds user expectations.</text>
                         </div>
 
                         <div className='about-me-button'>

@@ -136,6 +136,7 @@
     flex-grow: 1;
     flex:1;
     display: flex;
+    margin-bottom: 0;
   }
   .App-home {
     flex-grow: 1;
