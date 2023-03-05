@@ -23,11 +23,12 @@ const SkillCard = ({ icon, skill, percentage }) => {
     return "5";
   };
 
+ 
   return (
     <div className="skill-card">
       <div className="skill-icon">
         {/* Use an SVG element to include both the circle and the image */}
-        <svg width="40" height="40" viewBox="0 0 100 100">
+        <svg className="svg" viewBox="0 0 100 100">
           <motion.circle
             cx="50"
             cy="50"
@@ -39,6 +40,7 @@ const SkillCard = ({ icon, skill, percentage }) => {
             variants={variants}
             initial="initial"
             whileHover={"animate"}
+            // animate={'animate'}
             className="svg-container"
           />
             {icon}

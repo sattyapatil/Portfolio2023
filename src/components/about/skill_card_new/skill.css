@@ -32,6 +32,11 @@
     .svg-container {
       z-index: 1;
     }
+
+    .svg {
+      height: 45px;
+      width: 45px;
+    }
     
 }
 
@@ -67,5 +72,9 @@
 
   .svg-container {
     z-index: 1;
+  }
+  .svg {
+    height: 100px;
+    width: 100px;
   }
 }
