@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaTwitter, FaMedium} from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagramSquare, FaMedium, FaPhone, FaEnvelope} from 'react-icons/fa';
 import './contact.css';
 import SideBar from "../sidebar/sideBar";
 import ThemeIcon from "../theme_icon/themeIcon"
@@ -42,19 +42,37 @@ const Contact = (props) => {
 
                 <div className='contact-container2'>
                     <h2>Don't hesitate to reach out! I'm just a click away.</h2>
+                    <div className="card">
+                        <div className="card-header">
+                        <h2>Satish Pophale</h2>
+                        <p>Fullstack Developer (Python)</p>
+                        </div>
+                        <div className="card-body">
+                        <ul>
+                            <li>
+                            <FaPhone />
+                            <a href="tel:+91892834084">(+91) 892834084</a>
+                            </li>
+                            <li>
+                            <FaEnvelope />
+                            <a href="mailto:pophalesatishb@gmail.com">pophalesatishb@gmail.com</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
                     <div className="social-field-container">
-                        <SocialMediaCard  
-                            name='linkedin' icon={<FaLinkedin className="social-icon linkedin" />} link={'https://linkedin.com'}
-                        />
-                        <SocialMediaCard  
-                            name='github' icon={<FaGithub className="social-icon github" />} link={'https://github.com'}
-                        />
-                        <SocialMediaCard  
-                            name='twitter' icon={<FaTwitter className="social-icon twitter" />} link={'https://twitter.com'}
-                        />
-                        <SocialMediaCard  
-                            name='medium' icon={<FaMedium className="social-icon medium" />} link={'https://twitter.com'}
-                        />
+                            <SocialMediaCard  
+                                name='linkedin' icon={<FaLinkedin className="social-icon linkedin" />} link={'https://in.linkedin.com/in/satish-pophale'}
+                            />
+                            <SocialMediaCard  
+                                name='github' icon={<FaGithub className="social-icon github" />} link={'https://github.com/sattyapatil'}
+                            />
+                            <SocialMediaCard  
+                                name='instagram' icon={<FaInstagramSquare className="social-icon instagram" />} link={'https://instagram.com/sat_ish_97/'}
+                            />
+                            <SocialMediaCard  
+                                name='medium' icon={<FaMedium className="social-icon medium" />} link={'https://satish-p.medium.com/'}
+                            />
                     </div>
                 </div>
                 <motion.div

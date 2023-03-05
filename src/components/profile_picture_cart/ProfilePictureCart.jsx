@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import './ProfilePictureCart.css'
-import profPicture from './Satish1.jpg'
+import profPicture from './satish02.png'
 
 
 function ProfilePictureCart(props) {

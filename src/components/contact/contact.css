@@ -15,7 +15,6 @@
     }
 
     .contact-container {
-      
       flex:1;
       display: flex;
       /* max-width: 700px; */
@@ -112,6 +111,63 @@
       justify-content: center;
       align-items: center;
       font-size: 1.2em
+  }
+
+  .card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+    padding: 15px;
+    /* width: 400px; */
+    text-align: center;
+  }
+  
+  .card-header {
+    margin-bottom: 20px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 25px;
+    color: var(--text-color1);
+  }
+  
+  .card-header p {
+    margin: 0;
+    color: #777;
+    font-size: 12px;
+  }
+  
+  .card-body {
+    font-size: 15px;
+  }
+  
+  .card-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card-body ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-body ul li a {
+    margin-left: 20px;
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .card-body ul li a:hover {
+    color: #999;
+  }
+  
+  .card-body ul li svg {
+    font-size: 30px;
+    color: #777;
   }
 }
 
@@ -229,4 +285,62 @@
     align-items: center;
     font-size: 1.2em
 }
+
+.card {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+  padding: 30px;
+  /* width: 400px; */
+  text-align: center;
+}
+
+.card-header {
+  margin-bottom: 30px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 36px;
+  color: var(--text-color1);
+}
+
+.card-header p {
+  margin: 0;
+  color: #777;
+  font-size: 18px;
+}
+
+.card-body {
+  font-size: 24px;
+}
+
+.card-body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-body ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body ul li a {
+  margin-left: 20px;
+  color: #444;
+  text-decoration: none;
+}
+
+.card-body ul li a:hover {
+  color: #999;
+}
+
+.card-body ul li svg {
+  font-size: 30px;
+  color: #777;
+}
+
 }
