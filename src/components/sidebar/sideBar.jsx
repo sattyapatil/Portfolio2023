@@ -7,6 +7,7 @@ import { IoHome } from 'react-icons/io5';
 import {MdOutlineSummarize} from 'react-icons/md';
 import {MdWork, MdContacts} from 'react-icons/md';
 import {ImBlogger} from 'react-icons/im';
+import {BsPersonBadge} from 'react-icons/bs';
 import './sideBar.css'
 
 
@@ -63,7 +64,7 @@ function SideBar(props) {
                         <h2>About</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <MdOutlineSummarize style={iconStyles} onClick={() => navigate('/about')} />
+                        <BsPersonBadge style={iconStyles} onClick={() => navigate('/about')} />
                     </span>
                 </div>
                 <div className='side-bar-element'>

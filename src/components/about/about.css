@@ -140,6 +140,7 @@
         align-items: center;
         margin:5%;
         max-width: 100%;
+        min-width: 100%;
     }
 
     .skill-container {
