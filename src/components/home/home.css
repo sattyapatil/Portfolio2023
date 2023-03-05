@@ -136,7 +136,6 @@
     flex-grow: 1;
     flex:1;
     display: flex;
-    max-height: 100vh;
   }
   .App-home {
     flex-grow: 1;
