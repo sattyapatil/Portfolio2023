@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useNavigate } from 'react-router-dom';
 
 import { HiArrowSmRight } from 'react-icons/hi'
-import { FaLinkedin, FaGithub, FaTwitter, FaMedium} from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagramSquare, FaMedium} from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './home.css'
 import ProfilePictureCart from '../profile_picture_cart/ProfilePictureCart.jsx'
@@ -113,16 +113,16 @@ function Home(props) {
 
                         <div className="social-field-container">
                             <SocialMediaCard  
-                                name='linkedin' icon={<FaLinkedin className="social-icon linkedin" />} link={'https://linkedin.com'}
+                                name='linkedin' icon={<FaLinkedin className="social-icon linkedin" />} link={'https://in.linkedin.com/in/satish-pophale'}
                             />
                             <SocialMediaCard  
-                                name='github' icon={<FaGithub className="social-icon github" />} link={'https://github.com'}
+                                name='github' icon={<FaGithub className="social-icon github" />} link={'https://github.com/sattyapatil'}
                             />
                             <SocialMediaCard  
-                                name='twitter' icon={<FaTwitter className="social-icon twitter" />} link={'https://twitter.com'}
+                                name='instagram' icon={<FaInstagramSquare className="social-icon instagram" />} link={'https://instagram.com/sat_ish_97/'}
                             />
                             <SocialMediaCard  
-                                name='medium' icon={<FaMedium className="social-icon medium" />} link={'https://twitter.com'}
+                                name='medium' icon={<FaMedium className="social-icon medium" />} link={'https://satish-p.medium.com/'}
                             />
                         </div>
                         
