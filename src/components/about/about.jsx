@@ -7,14 +7,6 @@ import ThemeIcon from "../theme_icon/themeIcon"
 import { motion } from 'framer-motion';
 import "./about.css"
 import myPhoto from './satish4.png';
-import reactLogo from './logo192.png'
-import pythonLogo from './python.png'
-import flaskLogo from './flask.png'
-import sqlLogo from './sql.png'
-import mongodbLogo from './mongodb.png'
-import htmlLogo from './html.png'
-import cssLogo from './css.png'
-import jsLogo from './js.png'
 import ProfilePictureCart from "../profile_picture_cart/ProfilePictureCart";
 import ExperienceCard from "./experience_cart/experienceCart";
 import EducationCard from "./education_cart/educationCart";
