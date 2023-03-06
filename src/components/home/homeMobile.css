@@ -57,6 +57,14 @@
 
 }
 
+.sub-text-role {
+    font-size: 18px;
+    font-family: var(--sub-text-font-family);
+    color: var(--text-color1);
+    font-weight:'bold';
+    font-family: "Times New Roman";
+}
+
 .title-text-container {
     margin-top: 5%;
     margin-left: 5%;
@@ -64,7 +72,7 @@
     text-align: center;
 }
 .sub-text-container {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;

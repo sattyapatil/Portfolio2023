@@ -9,7 +9,7 @@
     background-image: linear-gradient(to top, var(--side-bar-background-color), var(--background-color));
     font-size: medium;
     color: var(--theme-color1);
-    height: 17%;
+    height: 120px;
     width: 100%;
 }
 
@@ -63,6 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    bottom: 0;
 }
 
 .side-bar-element:hover .side-bar-element-text{

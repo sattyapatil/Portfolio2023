@@ -7,7 +7,8 @@ import { IoHome } from 'react-icons/io5';
 import {MdOutlineSummarize} from 'react-icons/md';
 import {MdWork, MdContacts} from 'react-icons/md';
 import {ImBlogger} from 'react-icons/im';
-// import './sideBar.css'
+import {BsPersonBadge} from 'react-icons/bs';
+import './sideBar.css'
 
 
 function SideBar(props) {
@@ -18,27 +19,27 @@ function SideBar(props) {
 
     let location = useLocation(); 
 
-    useEffect(() => { 
+    // useEffect(() => { 
 
-        updateDimensions();
+    //     // updateDimensions();
    
-        window.addEventListener("resize", updateDimensions);     
+    //     window.addEventListener("resize", updateDimensions);     
 
-        return () => window.removeEventListener("resize",updateDimensions);    }, 
+    //     return () => window.removeEventListener("resize",updateDimensions);    }, 
         
-        [width]
+    //     [width]
         
-        )    
+    //     )    
           
-    const updateDimensions = () => {
-         const width = window.innerWidth
-         console.log(width)
-         setWindowWidth(width)
+    // const updateDimensions = () => {
+    //      const width = window.innerWidth
+    //      console.log(width)
+    //      setWindowWidth(width)
 
-         // Importing files depending on width of screen
-        if (width<1024) import (`./sideBarMobile.css`);
-        if (width>1024) import (`./sideBar.css`);
-       }
+    //      // Importing files depending on width of screen
+    //     if (width<1024) import (`./sideBarMobile.css`);
+    //     if (width>1024) import (`./sideBar.css`);
+    //    }
 
     // if (width>1024) {
     //     import './sideBarMobile.css'
@@ -63,15 +64,15 @@ function SideBar(props) {
                         <h2>About</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <MdOutlineSummarize style={iconStyles} onClick={() => navigate('/about')} />
+                        <BsPersonBadge style={iconStyles} onClick={() => navigate('/about')} />
                     </span>
                 </div>
                 <div className='side-bar-element'>
                     <span className='side-bar-element-text'>
-                        <h2>Experience</h2>
+                        <h2>Portfolio</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <MdWork style={iconStyles} />
+                        <MdWork style={iconStyles} onClick={() => navigate('/portfolio')} />
                     </span>
                 </div>
                 <div className='side-bar-element'>
@@ -79,7 +80,7 @@ function SideBar(props) {
                         <h2>Contact</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <MdContacts style={iconStyles} />
+                        <MdContacts style={iconStyles} onClick={() => navigate('/contact')} />
                     </span>
                 </div>
                 <div className='side-bar-element'>
@@ -87,7 +88,7 @@ function SideBar(props) {
                         <h2>Blogs</h2>
                     </span>
                     <span className='side-bar-element-icon'>
-                        <ImBlogger style={iconStyles} />
+                        <ImBlogger style={iconStyles} onClick={() => navigate('/blogs')} />
                     </span>
                 </div>
                 

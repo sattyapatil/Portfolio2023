@@ -1,82 +1,304 @@
-img {
-  width: 150%;
-  height: 80%;
+/* Styles for mobile */
+@media screen and (max-width: 1023px) {
+  /* ... */
+  img {
+    /* width: 100%; */
+    height: 100%;
+  }
+  
+  .profile-picture-cart {
+      /* animation: anim 10s infinite; */
+      flex: 1;
+      position: absolute;
+      z-index: 1;
+      background: radial-gradient(circle at 0% 0%, rgb(241, 237, 237), rgb(26, 26, 26));
+      /* background-color: rgb(13, 13, 13); */
+      /* background-image: linear-gradient(to right top, rgb(11, 11, 11),rgb(26, 26, 26)); */
+      display: flex;
+      width: 200px;
+      height: 200px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: calc(10px + 2vmin);
+      color: var(--text-color1);
+      /* border-left: 5px solid rgb(26, 26, 26); */
+      border-top: 5px solid var(--theme-color1);
+      border-bottom: 5px solid var(--theme-color2);
+      /* border-right: 5px solid rgb(255, 174, 0); */
+      border-radius: 50%;
+      margin-left: 2.5%;
+      /* left: 30%; */
+      top: 10%;
+      overflow: hidden;
+    }
+
+    .skill-card-img-overlay {
+      /* animation: anim-overlay 2s infinite; */
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* height: 100%; */
+      /* background-color: rgba(12, 12, 12, 0.418); */
+    }
+
+    @keyframes anim-overlay {
+      0%,
+      100% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.100);
+      }
+    
+      10% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.120);
+      }
+    
+      20% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.150);
+      }
+    
+      30% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.200);
+      }
+    
+      40% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.250);
+      }
+    
+      50% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.300);
+      }
+    
+      60% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.350);
+      }
+    
+      70% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.400);
+      }
+    
+      80% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.450);
+      }
+    
+      90% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.500);
+      }
+    }
+  
+
+    @keyframes anim {
+      0%,
+      100% {
+        /* border-radius: 5%; */
+        box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(26, 26, 26) inset,
+          0 -2vmin 7vmin var(--theme-color1) inset;
+      }
+    
+      10% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      20% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+      }
+    
+      30% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+        box-shadow: 0 -4vmin 8vmin rgb(26, 26, 26) inset, -1vmin -2vmin 6vmin rgb(104, 102, 102) inset,
+          -1vmin -2vmin 4vmin var(--theme-color1) inset, 1vmin 4vmin 8vmin var(--theme-color2) inset;
+      }
+    
+      40% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+      }
+    
+      50% {
+        /* border-radius: 5%; */
+        box-shadow: 0 4vmin 16vmin rgb(26, 26, 26) inset, 0 2vmin 5vmin rgb(165, 165, 165) inset, 
+          0 4vmin 4vmin var(--theme-color1) inset,
+          0 6vmin 8vmin var(--theme-color2) inset;
+      }
+    
+      60% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      70% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+        box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(85, 85, 85) inset,
+          0 -2vmin 7vmin var(--theme-color1) inset;
+      }
+    
+      80% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      90% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+      }
+    }
+    
 }
 
-.profile-picture-cart {
-    /* animation: anim 20s infinite; */
-    flex: 1;
-    position: absolute;
-    background: radial-gradient(circle at 0% 0%, rgb(54, 54, 54), rgb(26, 26, 26));;
-    /* background-color: rgb(13, 13, 13); */
-    /* background-image: linear-gradient(to right top, rgb(11, 11, 11),rgb(26, 26, 26)); */
-    display: flex;
-    width: 35%;
-    height: 90%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: calc(10px + 2vmin);
-    color: var(--text-color1);
-    /* border-left: 5px solid rgb(26, 26, 26); */
-    border-top: 5px solid var(--theme-color1);
-    border-bottom: 5px solid var(--theme-color2);
-    /* border-right: 5px solid rgb(255, 174, 0); */
-    border-radius: 5%;
-    margin-left: 2.5%;
-    left: 0;
-    top: 5%;
-  }
 
-  @keyframes anim {
-    0%,
-    100% {
-      border-radius: 5%;
-      box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(26, 26, 26) inset,
-        0 -2vmin 7vmin rgb(255, 195, 66) inset;
-    }
-  
-    10% {
-      border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
-    }
-  
-    20% {
-      border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
-    }
-  
-    30% {
-      border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
-      box-shadow: 0 -4vmin 8vmin rgb(26, 26, 26) inset, -1vmin -2vmin 6vmin rgb(104, 102, 102) inset,
-        -1vmin -2vmin 4vmin rgb(255, 195, 66) inset, 1vmin 4vmin 8vmin rgb(255, 195, 66) inset;
-    }
-  
-    40% {
-      border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
-    }
-  
-    50% {
-      border-radius: 5%;
-      box-shadow: 0 4vmin 16vmin rgb(26, 26, 26) inset, 0 2vmin 5vmin rgb(165, 165, 165) inset, 
-        0 4vmin 4vmin rgb(255, 195, 66) inset,
-        0 6vmin 8vmin rgb(255, 195, 66) inset;
-    }
-  
-    60% {
-      border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
-    }
-  
-    70% {
-      border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
-      box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(85, 85, 85) inset,
-        0 -2vmin 7vmin rgb(255, 195, 66) inset;
-    }
-  
-    80% {
-      border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%;
-    }
-  
-    90% {
-      border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%;
-    }
+
+/* Styles for desktop */
+@media screen and (min-width: 1024px) {
+  /* ... */
+  img {
+    /* width: 100%; */
+    height: 100%;
   }
   
+  .profile-picture-cart {
+      /* animation: anim 10s infinite; */
+      flex: 1;
+      position: absolute;
+      background: radial-gradient(circle at 0% 0%, rgb(241, 237, 237), rgb(26, 26, 26));
+      /* background-color: rgb(13, 13, 13); */
+      /* background-image: linear-gradient(to right top, rgb(11, 11, 11),rgb(26, 26, 26)); */
+      display: flex;
+      width: 35%;
+      height: 90%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: calc(10px + 2vmin);
+      color: var(--text-color1);
+      /* border-left: 5px solid rgb(26, 26, 26); */
+      border-top: 5px solid var(--theme-color1);
+      border-bottom: 5px solid var(--theme-color2);
+      /* border-right: 5px solid rgb(255, 174, 0); */
+      border-radius: 5%;
+      margin-left: 2.5%;
+      left: 0;
+      top: 5%;
+      overflow: hidden;
+    }
+
+    .skill-card-img-overlay {
+      /* animation: anim-overlay 2s infinite; */
+      position: absolute;
+      bottom: 0;
+      /* width: 100%; */
+      height: 100%;
+      background-color: rgba(17, 17, 17, 0.1);
+    }
+
+    @keyframes anim-overlay {
+      0%,
+      100% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.100);
+      }
+    
+      10% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.120);
+      }
+    
+      20% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.150);
+      }
+    
+      30% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.200);
+      }
+    
+      40% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.250);
+      }
+    
+      50% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.300);
+      }
+    
+      60% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.350);
+      }
+    
+      70% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.400);
+      }
+    
+      80% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.450);
+      }
+    
+      90% {
+        height: 100%;
+        background-color: rgba(86, 253, 100, 0.500);
+      }
+    }
+  
+    @keyframes anim {
+      0%,
+      100% {
+        /* border-radius: 5%; */
+        box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(26, 26, 26) inset,
+          0 -2vmin 7vmin var(--theme-color1) inset;
+      }
+    
+      10% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      20% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+      }
+    
+      30% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+        box-shadow: 0 -4vmin 8vmin rgb(26, 26, 26) inset, -1vmin -2vmin 6vmin rgb(104, 102, 102) inset,
+          -1vmin -2vmin 4vmin var(--theme-color1) inset, 1vmin 4vmin 8vmin var(--theme-color1) inset;
+      }
+    
+      40% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+      }
+    
+      50% {
+        /* border-radius: 5%; */
+        box-shadow: 0 4vmin 16vmin rgb(26, 26, 26) inset, 0 2vmin 5vmin rgb(165, 165, 165) inset, 
+          0 4vmin 4vmin var(--theme-color1) inset,
+          0 6vmin 8vmin var(--theme-color2) inset;
+      }
+    
+      60% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      70% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+        box-shadow: 0 -2vmin 4vmin rgb(26, 26, 26) inset, 0 -4vmin 4vmin rgb(85, 85, 85) inset,
+          0 -2vmin 7vmin var(--theme-color1) inset;
+      }
+    
+      80% {
+        /* border-radius: 20% 5% 20% 5% / 5% 20% 5% 20%; */
+      }
+    
+      90% {
+        /* border-radius: 5% 20% 5% 20% / 20% 5% 20% 5%; */
+      }
+    }
+    
+}
+
