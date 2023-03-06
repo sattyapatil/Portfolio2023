@@ -1,0 +1,72 @@
+/* Styles for mobile */
+@media screen and (max-width: 1023px) {
+  .social-media-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text-color1);
+      font-size: 8px;
+      margin: 0 10px;
+    }
+    
+    .social-media-icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: var(--theme-color1);
+      margin-bottom: 10px;
+    }
+    
+    .social-media-icon svg {
+      width: 15px;
+      height: 15px;
+      fill: var(--text-color1);
+    }
+    
+    .social-media-name {
+      margin: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+}
+
+
+/* Styles for desktop */
+@media screen and (min-width: 1024px) {
+  .social-media-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color1);
+    font-size: 10px;
+    margin: 0 20px;
+  }
+  
+  .social-media-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--theme-color1);
+    margin-bottom: 10px;
+  }
+  
+  .social-media-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color1);
+  }
+  
+  .social-media-name {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
