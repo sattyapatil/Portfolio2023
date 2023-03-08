@@ -12,16 +12,9 @@ This is a personal portfolio website project built with React. It features respo
     3. Four different routes - Home, About Me, Portfolio, Contact, and Blogs
     4. Cool animations to enhance the user experience
     
-## Getting Started
+## Check out
 
-To get started with this project, simply clone the repository and run npm install to install the necessary dependencies. After the dependencies have been installed, you can run npm start to start the development server.
-
-```sh
-git clone https://github.com/sattyapatil/Portfolio2023.git
-cd Portfolio2023
-npm install
-npm start
-```
+ [Satish Pophale](https://sattyapatil.github.io)
 
 ## Technologies Used
 
