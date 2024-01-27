@@ -64,7 +64,7 @@ function About(props) {
                             Proficient in multiple frameworks and always eager to learn.
                             </p>
                             <div class="resume-button">
-                                <Button text="Download Resume" onClick={()=>{window.open('https://drive.google.com/file/d/18WI2nAAfHs0_hcCqMpZgz7K5i1rV5Tmp/view?usp=sharing', '_blank');}} icon={<HiArrowSmDown />} />
+                                <Button text="Download Resume" onClick={()=>{window.open('https://drive.google.com/file/d/14wuvByA4sZMWf8-KtMdg0VjepfXzxGaM/view?usp=sharing', '_blank');}} icon={<HiArrowSmDown />} />
                                 {/* <a href="https://drive.google.com/file/d/18WI2nAAfHs0_hcCqMpZgz7K5i1rV5Tmp/view?usp=sharing" download>Download Resume</a> */}
                             </div>
                         </div>

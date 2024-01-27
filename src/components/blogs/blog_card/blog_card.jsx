@@ -12,9 +12,9 @@ const BlogCard = ({ title, categories, url, imageUrl }) => {
       whileTap={{ scale: 0.95 }}
       className="blog-card"
     >
-      <div className="blog-card-image-container">
+      {/* <div className="blog-card-image-container">
         <img src={imageUrl} alt={title} />
-      </div>
+      </div> */}
       <div className="blog-card-content">
         <h3>{title}</h3>
         <div className="project-techs">
