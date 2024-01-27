@@ -98,7 +98,7 @@ function Home(props) {
                         <text className='sub-text-role'>FULL-STACK DEVELOPER</text>
 
                         <div className='sub-text-container'>
-                            <text className='sub-text'>Experienced Python developer with a passion for solving complex problems. 4+ years of experience creating elegant and efficient software solutions. Dedicated to delivering high-quality code that meets and exceeds user expectations.</text>
+                            <text className='sub-text'>Experienced Python developer with a passion for solving complex problems. 5+ years of experience creating elegant and efficient software solutions. Dedicated to delivering high-quality code that meets and exceeds user expectations.</text>
                         </div>
 
                         <div className='about-me-button'>
@@ -117,9 +117,6 @@ function Home(props) {
                             />
                             <SocialMediaCard  
                                 name='github' icon={<FaGithub className="social-icon github" />} link={'https://github.com/sattyapatil'}
-                            />
-                            <SocialMediaCard  
-                                name='instagram' icon={<FaInstagramSquare className="social-icon instagram" />} link={'https://instagram.com/sat_ish_97/'}
                             />
                             <SocialMediaCard  
                                 name='medium' icon={<FaMedium className="social-icon medium" />} link={'https://satish-p.medium.com/'}

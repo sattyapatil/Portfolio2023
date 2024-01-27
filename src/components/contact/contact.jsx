@@ -68,9 +68,6 @@ const Contact = (props) => {
                                 name='github' icon={<FaGithub className="social-icon github" />} link={'https://github.com/sattyapatil'}
                             />
                             <SocialMediaCard  
-                                name='instagram' icon={<FaInstagramSquare className="social-icon instagram" />} link={'https://instagram.com/sat_ish_97/'}
-                            />
-                            <SocialMediaCard  
                                 name='medium' icon={<FaMedium className="social-icon medium" />} link={'https://satish-p.medium.com/'}
                             />
                     </div>
